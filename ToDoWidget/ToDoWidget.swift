@@ -13,7 +13,10 @@ struct Provider: IntentTimelineProvider {
     
     private let items = [
         ToDoItem(text: "To Do #1", timestamp: Date()),
-        ToDoItem(text: "To Do #2", timestamp: Date())
+        ToDoItem(text: "To Do #2", timestamp: Date()),
+        ToDoItem(text: "To Do #3", timestamp: Date()),
+        ToDoItem(text: "To Do #4", timestamp: Date()),
+        ToDoItem(text: "To Do #5", timestamp: Date())
     ]
     
     func placeholder(in context: Context) -> ToDoEntry {
