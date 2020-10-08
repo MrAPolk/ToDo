@@ -10,10 +10,8 @@ import SwiftUI
 struct ToDoListView: View {
     var items: [ToDoItem]
     var body: some View {
-        List {
-            ForEach(items, id: \.timestamp) { item in
-                ToDoItemView(text: item.text)
-            }
+        List(items, id: \.timestamp) { item in
+            ToDoItemView(text: item.text)
         }
     }
 }
