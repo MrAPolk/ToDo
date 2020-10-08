@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B807E5A252F6B9200A4389E /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B807E59252F6B9200A4389E /* CustomTextView.swift */; };
 		9BE98ECE2525D02500C648FC /* ToDoWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE98ECA2525CEDD00C648FC /* ToDoWidgetView.swift */; };
 		9BE98EDB2525D5C800C648FC /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE98EDA2525D5C800C648FC /* ToDoItem.swift */; };
 		9BE98EE02525D7B100C648FC /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE98EDA2525D5C800C648FC /* ToDoItem.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9B807E59252F6B9200A4389E /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		9BE98ECA2525CEDD00C648FC /* ToDoWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoWidgetView.swift; sourceTree = "<group>"; };
 		9BE98EDA2525D5C800C648FC /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		9BE98EE32525D7D400C648FC /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				9BE98EDA2525D5C800C648FC /* ToDoItem.swift */,
 				9BF978DD2524CC45009F8699 /* ToDoItemView.swift */,
 				9BE98EE32525D7D400C648FC /* ToDoListView.swift */,
+				9B807E59252F6B9200A4389E /* CustomTextView.swift */,
 				9BF978CA2524C6C8009F8699 /* Assets.xcassets */,
 				9BF978D42524C6C8009F8699 /* Info.plist */,
 				9BF978CC2524C6C8009F8699 /* Preview Content */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BE98EE42525D7D400C648FC /* ToDoListView.swift in Sources */,
+				9B807E5A252F6B9200A4389E /* CustomTextView.swift in Sources */,
 				9BF978FB2524D524009F8699 /* ToDoWidget.intentdefinition in Sources */,
 				9BF978DE2524CC46009F8699 /* ToDoItemView.swift in Sources */,
 				9BE98EDB2525D5C800C648FC /* ToDoItem.swift in Sources */,
