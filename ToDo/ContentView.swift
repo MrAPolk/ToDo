@@ -9,27 +9,27 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    let items = [
+    
+    @State private var items: [ToDoItem] = [
         ToDoItem(text: "To Do #1", timestamp: Date()),
-        ToDoItem(text: "To Do #2", timestamp: Date()),
-        ToDoItem(text: "To Do #3", timestamp: Date()),
-        ToDoItem(text: "To Do #4", timestamp: Date()),
-        ToDoItem(text: "To Do #5", timestamp: Date())
     ]
     
     var body: some View {
-        VStack(alignment: .leading){
-            ToDoListView(items: items)
+        NavigationView {
+            VStack {
+                ToDoListView(items: items)
+                NavigationLink(destination: ToDoInputView(addToDo: addToDo)) {
+                    CustomTextView(text: "Add To Do")
+                }
+            }
+            .navigationBarTitle("To Dos", displayMode: .inline)
         }
     }
+    
+    func addToDo(_ text: String) {
+        items.append(ToDoItem(text: text, timestamp: Date()))
+    }
 }
-
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
